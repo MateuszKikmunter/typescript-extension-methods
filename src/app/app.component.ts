@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ExtensionMethods';
+  title = 'Extension Methods';
+  capitalizedString = "abc".capitalizeFirstLetter();
+  emptyCapitalizedString = "".capitalizeFirstLetter();
+  emptyString = "".isNullOrEmpty();
+  someString = "some string".isNullOrEmpty();
 }
